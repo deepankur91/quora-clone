@@ -1,0 +1,13 @@
+.widget__header{
+    display: flex;
+    flex-direction: column;
+    flex: 0.4;
+    padding-top: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 20px 0 0 20px;
+}
+
+.widget__header h5{
+    padding: 0 200px 400px 20px;
+}

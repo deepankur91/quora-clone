@@ -1,0 +1,25 @@
+.quoraQAP__icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.quoraQAP__icons__question{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quoraQAP__icons__answer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quoraQAP__icons__post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

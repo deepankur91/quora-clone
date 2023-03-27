@@ -1,0 +1,27 @@
+.quoraBox{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 700px;
+}
+
+.quoraBox1{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    cursor: pointer;
+    max-width: 700px;
+}
+
+.quoraBox__quora p{
+    border: 1px solid lightgray;
+    background-color: rgb(235, 232, 232);
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 5px 180px 5px 10px;
+    margin: 4px 0 0 10px;
+    font-weight: 100;
+}
