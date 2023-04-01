@@ -13,6 +13,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import 'react-responsive-modal/styles.css'
 import { ExpandMore } from '@mui/icons-material';
 import LogIn from './LogIn';
+import AddAnswer from './AddAnswer';
 
 
 function QuoraHeader() {
@@ -78,11 +79,8 @@ function QuoraHeader() {
               </Button>
             </div>
           </Modal>
-
-          <div>
-            <LogIn />
-            <p>LogIn</p>
-          </div>
+          <AddAnswer />
+          <LogIn/>
         </div>
     </div>
   )

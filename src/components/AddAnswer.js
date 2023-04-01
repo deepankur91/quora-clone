@@ -1,15 +1,18 @@
 import React, { useState } from 'react'
-import { Button } from '@mui/material';
+import './css/Post.css';
 import Modal from 'react-responsive-modal';
-import CloseIcon from '@mui/icons-material/Close';
 import 'react-responsive-modal/styles.css'
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
+import CloseIcon from '@mui/icons-material/Close';
+import { Button } from '@mui/material';
 
-function LogIn() {
+function AddAnswer() {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const Close = <CloseIcon />;
   return (
     <div>
-       <Button onClick={() => setIsModalOpen(true)}>LogIn</Button>
+       <Button onClick={() => setIsModalOpen(true)}>Add Answer</Button>
           <Modal
             open = {isModalOpen}
             CloseIcon = {Close}
@@ -23,15 +26,14 @@ function LogIn() {
               }
             }}
             >
-            <div>
-            <h4>LogIn</h4>
-            </div>
-            <div className='modal__field'>
-              <label className='email'>E-Mail</label>
-              <input type='email' ReactQuill placeholder='Enter your email Id'/>
-              <label className='password'>Password</label>
-              <input type='password' placeholder='**********' />
-            </div>
+            <div className='modal__question'>
+            <h2>Who is the CEO of google?</h2>
+            <p>asked by <span className='name'>User Name</span> on <span className='name'>Timestamp</span></p>
+          </div>
+          <div className='modal__answer'>
+            <ReactQuill placeholder='Type your answer here......'/>
+          </div>
+          <div className='modal__button'></div>
             <div className='modal__button'>
               <Button className='cancel' onClick={() => setIsModalOpen(false)}>
                 Cancel
@@ -45,4 +47,4 @@ function LogIn() {
   )
 }
 
-export default LogIn
+export default AddAnswer
